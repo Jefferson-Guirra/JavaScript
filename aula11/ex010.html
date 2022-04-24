@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura IF</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Informe a velocidade do carro:
+    <input type="number" name="txtn1" id="txtn1"> km/h
+    <input type="button" value="Verificar" id="botao" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function calcular(){
+        var txt=document.getElementById('txtn1')
+        var res=document.getElementById('res')
+        var vel=Number(txt.value)
+        res.innerHTML=`<p>A sua velocidade foi de <strong>${vel}</strong></p>`
+        if (vel>60){
+            res.innerHTML+='você excedeu o limite permito nessa via, você foi <strong>MULTADO!!'</strong>
+        }
+        res.innerHTML+='<p>Dirija sempre com o sinto de segurança!</p>'
+       
+       
+    
+    
+    
+    }
+        
+    </script>
+</body>
+</html>

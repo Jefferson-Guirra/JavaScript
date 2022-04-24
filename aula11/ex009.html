@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de nacionalidade</title>
+</head>
+<body>
+    informe a sua naturalidade:
+    <input type="text" name="nac1" id="nac1" >
+    <input type="button" value="verificar" id="botao" onclick="resultado()">
+    <div id="res">
+        nacionalidade
+    </div>
+ 
+    
+<script>
+    function resultado(){
+    var pais=document.getElementById('nac1').value
+    var res=document.getElementById('res')
+    if(pais.toLowerCase()=='brasil'){
+        res.innerHTML=`Você nasceu no(a) ${pais} é brasieliro.`
+    }
+    if(pais.toLowerCase()!='brasil'){
+        res.innerHTML=`Você nasceu no ${pais} é estrangeiro.`
+    }
+   
+    }
+    
+</script>
+
+
+
+</body>
+</html>
