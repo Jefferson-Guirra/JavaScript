@@ -5,28 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de nacionalidade</title>
+    <style>
+        body{
+            font-family: arial;
+            background-color: #265C4B;
+            color: white;
+            text-shadow: 1px 1px 4px #265c4b98 ;
+            line-height: 2em;
+        }
+        h1{
+            text-align: center;
+            font-size: 2em;
+        }
+        input{
+            font-family: arial;
+        }
+        #nac1{
+            text-shadow: 1px 1px 4px #265c4b98 ;
+            border:1px solid transparent;
+            border-radius: 2px;
+            width: 100px;
+        }
+        #botao{
+            text-shadow: 1px 1px 4px #265c4b98 ;
+            border:1px solid transparent;
+            border-radius: 2px;
+            cursor: pointer;
+            
+        }
+        main{
+            width: 450px;
+            margin: auto;
+            background-color:#007566;
+            padding: 20px;
+            border-radius: 7px;
+        }
+        
+    </style>
 </head>
 <body>
-    informe a sua naturalidade:
-    <input type="text" name="nac1" id="nac1" >
-    <input type="button" value="verificar" id="botao" onclick="resultado()">
-    <div id="res">
-        nacionalidade
-    </div>
+    <head><h1>Nacionalidade</h1></head>
+    <main>
+        
+        
+        informe a sua naturalidade:
+        <input type="text" name="nac1" id="nac1" >
+        <input type="button" value="verificar" id="botao" onclick="resultado()">
+        <div id="res">
+            Resultado:
+        </div>
+    </main>
  
     
 <script>
     function resultado(){
     var pais=document.getElementById('nac1').value
     var res=document.getElementById('res')
+    var btn=document.getElementById('botao')
+    btn.style.background='red'
     if(pais.toLowerCase()=='brasil'){
         res.innerHTML=`Você nasceu no(a) ${pais} é brasieliro.`
     }
     if(pais.toLowerCase()!='brasil'){
         res.innerHTML=`Você nasceu no ${pais} é estrangeiro.`
     }
-   
+    
     }
+    
     
 </script>
 
