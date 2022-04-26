@@ -1,6 +1,6 @@
 var data=new Date()
-var dia=data.getDay
-console.log(dia)
+var dia=data.getDay()
+
 
 switch(dia){
     case 0:
