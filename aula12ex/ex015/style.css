@@ -1,0 +1,48 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #B2864C;
+    color: white;
+    font: normal 15pt arial;
+    line-height: 2em;
+}
+
+header{
+    text-align:center;
+    color:white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-variant: small-caps;
+    
+}
+section{
+    font-size: 12pt;
+    text-align:left;
+    background-color: #FFD59D;
+    color:black;
+    width: 500px;
+    height: 60vh;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.235);
+}
+#imagem{
+    text-align: center;
+}
+input#nasc{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    height: 1.3em;
+}
+input#verificar{
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+}
