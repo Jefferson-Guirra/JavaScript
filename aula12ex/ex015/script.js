@@ -14,18 +14,18 @@ function verificar(){
             genero='Homem'
             if (idade>=0 && idade<10){
         
-                img.src='criança.png'
-                
+                img.src='imagens/criança.png'
+
             }else if (idade<21){
             
-                img.src='jovem.png'
+                img.src='imagens/jovem.png'
             }else if(idade<50){
             
-                img.src='adulto.png'
+                img.src='imagens/adulto.png'
             }
             else{
         
-                img.src='velho.png'
+                img.src='imagens/velho.png'
             }
 
 
@@ -33,18 +33,18 @@ function verificar(){
             genero='Mulher'
             if (idade>=0 && idade<10){
         
-                img.src='criança-f.png'
+                img.src='imagens/criança-f.png'
                 
             }else if (idade<21){
-            
-                img.src='jovem-f.png'
+                
+                img.src='imagens/jovem-f.png'
+
             }else if(idade<50){
             
-                img.src='adulto-f.png'
-            }
-            else{
+                img.src='imagens/adulto-f.png'
+            }else{
         
-                img.src='velho-f.png'
+                img.src='imagens/velho-f.png'
             }
         }
         res.style.textAlign='center'
