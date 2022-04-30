@@ -18,7 +18,7 @@ header{
 }
 main{
     font-size: 12pt;
-    text-align: left;
+    text-align:left;
     background-color: white;
     color:black;
     width: 500px;
@@ -28,25 +28,10 @@ main{
     border-radius: 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.235);
 }
-p{
-    text-align: center;
-    margin-bottom: 10px;
-}
-#num{
-    padding: 2px;
-    border: 1px solid rgba(0, 0, 0, 0.196);
-    border-radius: 2px;
-
-}
-#botao{
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    background-color: gainsboro;
-    border-radius: 2px;
-    font-size: 0.8em;
-    padding: 3px;
-
-    
+select{
+    width: 170px;
+    margin-top: 20px;
+    padding: 5px;
 }
 
 footer{
