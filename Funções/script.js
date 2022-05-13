@@ -18,7 +18,7 @@ function imc (peso,altura){
 
 }
 
-console.log(imc(70,1.80))*/
+console.log(imc(70,1.80))
 
 function terceiraidade(idade){
   if (typeof idade !== 'number'){
@@ -29,4 +29,4 @@ function terceiraidade(idade){
     return console.log('Não é idoso')
   }
 }
-var idoso = terceiraidade(60)
+var idoso = terceiraidade(60)*/

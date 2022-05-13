@@ -35,7 +35,7 @@ function fim(){
         for (let c in lista){
             soma+=lista[c]
         }
-    res.innerHTML=`Ao todo temos ${lista.length} dois valores cadastrados`
+    res.innerHTML=`Ao todo temos ${lista.length} valores cadastrados`
     res.innerHTML+=`<br>O maior valor informado foi ${Math.max(...lista)}`
     res.innerHTML+=`<br> O menor valor informado foi ${Math.min(...lista)}`
     res.innerHTML+=`<br>Somando todos os valores temos ${soma}`
