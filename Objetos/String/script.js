@@ -60,7 +60,8 @@ console.log(listaRoupa)
 
 const htmlText = '<div> o melhor item</div><div>A mlehor lista</div>'
 const arrayHtml = htmlText.split('div')
-console.log(arrayHtml)
+
+
 //Juntando
 const novoHtml = arrayHtml.join('article')
 console.log(novoHtml)

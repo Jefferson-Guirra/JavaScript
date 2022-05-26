@@ -34,7 +34,7 @@ const manipular = new Dom ()
 manipular.classAdd('li')
 manipular.classremove('li')*/
 
-function Dom(seletor){
+/*function Dom(seletor){
   const elementList = document.querySelectorAll(seletor)
   this.elements = elementList
   this.addClass = function(classe){
@@ -51,5 +51,4 @@ function Dom(seletor){
 
 const listaItens = new Dom ('li')
 console.log(listaItens.elements)
-console.log(listaItens.addClass('ola'))
-
+console.log(listaItens.addClass('ola'))*/

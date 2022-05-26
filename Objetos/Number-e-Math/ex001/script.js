@@ -16,26 +16,15 @@ console.log(maxNumero)
 const listaPrecos = ['R$ 59,99', 'R$ 100,222', 'r$ 230  ', 'R$ 200']
 const precosArredondados = []
 
-/*listaPrecos.forEach((item)=>{
-   let precos = +item.toUpperCase().replace('R$','').trim().replace(',','.')
-  precos = +precos.toFixed(2)
-  soma += precos
-  precosArredondados.push(precos)
-})
-console.log(precosArredondados)
-console.log(soma)*/
 function limparPrecos (preco){
   preco = +preco.toUpperCase().replace('R$','').trim().replace(',','.')
   preco = +preco.toFixed(2)
   return preco
 }
-let soma = 0
+let somaTot = 0
 listaPrecos.forEach((preco)=>{
-  soma += limparPrecos(preco)
+  somaTot += limparPrecos(preco)
 })
 
 console.log(limparPrecos(listaPrecos[1]))
-console.log(soma)
-
-
-
+console.log(somaTot)
