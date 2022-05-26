@@ -27,16 +27,19 @@ console.log(new Array(5))
 const frutas = ['Banana', 'Pêra', ['Uva Roxa', 'Uva Verde']];
 console.log(frutas[2].length)
 console.log('----------------------------------------------------------')
+
 //ordem alfabetica
 const instrumentos = ['Guitarra', 'Baixo', 'Violão'];
 instrumentos.sort()
 console.log(instrumentos)
 console.log('----------------------------------------------------------')
+
 //ordem Númerica de caracter a caracter
 const idades = [32,21,33,43,1,12,8];
 idades.sort()
 console.log(idades)
 console.log('----------------------------------------------------------')
+
 //Adicionando elementos no inicio da array e ao final
 const carros2 = ['Ford', 'Fiat', 'VW'];
 carros2.unshift('Ferrari')
@@ -107,7 +110,6 @@ htmlString = htmlString.split('h2');
 // ['<', '>Título Principal</', '>']
 htmlString = htmlString.join('h1');
 // <h1>Título Principal</h1>
-COPIAR
 //[].SLICE()
 //[].slice(inicio, final) retorna os itens da array começando pelo início e indo até o valor de final.
 
