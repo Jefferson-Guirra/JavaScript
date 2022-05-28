@@ -55,7 +55,10 @@ Object.defineProperties (moto,{
       return this._rodas
     },
     set(valor){
-      this.rovalor*4
+       this._rodas = valor*4
     }
   }
 })
+moto.rodas = 4
+
+console.log(moto.rodas)
