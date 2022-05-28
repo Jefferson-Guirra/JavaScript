@@ -12,4 +12,11 @@ const li ={
 ul.ativar('ativo')
 ul.ativar.call(li,'oi')*/
 
-dom.prototype.ativar.call(li,'oi')
+dom.prototype.ativar.call(li,'ativo')
+
+const arraysLi = document.querySelectorAll('li')
+const filtro = Array.prototype.filter.call(arraysLi,(item)=>{
+  
+  return item.classList.contains('ativo')
+})
+console.log(filtro)
