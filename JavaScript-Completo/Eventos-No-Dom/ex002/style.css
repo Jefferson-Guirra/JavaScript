@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cronometro{
+  background-color: gray;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+.tempo{
+  background-color: white;
+  width:95%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  justify-content: flex-end;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-inline: auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  
+}
+
+.button{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  
+}
+
+input{
+  padding: 20px;
+  border-radius: 70%;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: hsl(240, 100%, 50%,.3);
+}
+
+input:hover{
+  background-color: hsl(240, 100%, 50%,.5);
+}
+
