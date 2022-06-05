@@ -1,76 +1,102 @@
 *{
-  font-size: 62,5%;
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  background-color: rgb(233, 225, 225,.5);
+  background-color:#F7EED2 ;
 }
 h1{
   width: fit-content;
   margin: auto;
 }
-.cadastro{
-  align-items:flex-start;
-  
-  display: flex;
-  flex-direction: column;
-  gap:1.5rem ;
-  width: 500px;
+
+.content{
+  width: 400px;
   margin: auto;
-  border: 1px solid black;
-  flex-wrap: wrap;
+  background:white;
   overflow: hidden;
   padding: 20px;
-  border-radius: .3rem;
-  box-shadow: 0px 0px 6px hsl(0, 0%, 0%,.2);
+  border-radius: 5px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%,-50%,0);
+  border: 1px solid hsl(0, 0%, 0%,.5);
+  box-shadow: 0px 0px 3px black;
 }
-#contato input,
-#contato textarea {
-  width: 500px;
-  margin-top: .5rem;
-  margin-bottom: 1rem;
+.button{
+  text-align: center;
   
-  padding-block: .3rem;
-  border-radius: .2rem;
-
 }
-#contato{
-  display: flex;
-  flex-direction: column;
-}
-.concluir{
-  width: fit-content;
-  margin: auto;
-}
-.concluir input{
-  padding: .5rem;
+#button{
   border: none;
-  border-radius: .3rem;
-  background: darkmagenta;
+  font-weight: bold;
+  padding-inline: 8px;
+  padding-block: 4px;
   color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px black;
+  background-color: #723147;
+  margin-top: 10px;
+}
+
+#button:hover{
+  background-color: hsl(340, 40%, 32%,.9);
+}
+#contato input{
+  width: 100%;
+}
+input{
+  padding: 4px;
+  margin-top: 2px;
+}
+label{
+  display: block;
+  
   font-weight: bold;
   font-variant: small-caps;
-  
 }
-
-label:hover{
-  color: darkmagenta;
-}
-textarea{
-  height: 10rem;
+textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 18px;
+  font-variant: small-caps;
+  overflow: hidden;
 }
 
 input.invalido{
-  border: 2px solid red;
-  font-weight: bolder;
-  color: red;
+  border: 3px solid red;
 }
-span{
-  font-size: 0.6rem;
+.erro{
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+
 }
+.content #color{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  left: 13px;
+  top: 40%;
+  transform: translate3d(0,-3px,0);
+  
+}
+.content #color::after{
+  content: '';
+  display: inline-block;
+  width: 90%;
+  height: 90%;
+  background-image: linear-gradient(white,red,yellow,blue);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(6%,2%,0);
+}
+

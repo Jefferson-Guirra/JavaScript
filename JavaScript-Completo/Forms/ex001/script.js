@@ -1,30 +1,45 @@
-console.log(document.forms.contato.elements[0])
-console.log(document.forms[0].elements[0])
-const contato = document.querySelector('#contato')
-const concluir = document.querySelector('[data-cadastrar]')
-const texto = document.querySelector('textarea')
+const mensagem = document.querySelector('textarea')
+const botao = document.querySelector('#button')
 
-concluir.addEventListener('click',initFinalizar)
-function initFinalizar(){
-  const nome = contato.elements[0].value
+const dadosForms ={}
+
+
+
+
+botao.addEventListener('click',initFim)
+console.log(contato.elements)
+function initFim(){
+  const nome = contato.elements.nome.value
   const email = contato.elements.email.value
-  const senha = contato.elements[2].value
-  texto.innerHTML +=` ${nome}`
-  texto.innerHTML +=`${email}`
-  texto.innerHTML +=`${senha}`
+  const senha = contato.elements.senha.value
+  mensagem.innerHTML =`nome: ${nome}\nemail: ${email}\nsenha: ${senha}\n`
   
   console.log(nome,email,senha)
 }
+
 function handleKeyUp(event){
-  texto.innerText =   event.target.value
+  const dado = event.srcElement.id
+  const elemento = event.target.value
   const target = event.target
+  document.body.style.backgroundColor = target.value
+  mensagem.innerText = `${dado}: ${elemento}`
+
   if(!target.checkValidity()){
-    console.log(target)
+    contato.nome.setCustomValidity('Campo Obrigatorio.')
+    contato.email.setCustomValidity('email deve conter @.')
     target.classList.add('invalido')
-    target.nextElementSibling.innerText = target.validationMessage
+    
+    target.nextElementSibling.innerText=target.validationMessage
+  } else if(event.target.checked){
+    console.log(event.target.value)
   }
   
-  
+  else{
+    target.classList.remove('invalido')
+  }
+  dadosForms[event.target.name]=event.target.value
+  console.log(dadosForms)
 }
 
-contato.addEventListener('change',handleKeyUp)
+const form = document.querySelector('#contato')
+form.addEventListener('change',handleKeyUp)
