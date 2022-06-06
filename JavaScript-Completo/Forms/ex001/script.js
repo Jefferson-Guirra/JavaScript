@@ -7,20 +7,22 @@ const dadosForms ={}
 
 
 botao.addEventListener('click',initFim)
-console.log(contato.elements)
+
 function initFim(){
   const nome = contato.elements.nome.value
   const email = contato.elements.email.value
   const senha = contato.elements.senha.value
   mensagem.innerHTML =`nome: ${nome}\nemail: ${email}\nsenha: ${senha}\n`
   
-  console.log(nome,email,senha)
+  
 }
 
 function handleKeyUp(event){
   const dado = event.srcElement.id
   const elemento = event.target.value
   const target = event.target
+  dadosForms[event.target.name]=event.target.value
+  
   document.body.style.backgroundColor = target.value
   mensagem.innerText = `${dado}: ${elemento}`
 
@@ -37,9 +39,9 @@ function handleKeyUp(event){
   else{
     target.classList.remove('invalido')
   }
-  dadosForms[event.target.name]=event.target.value
-  console.log(dadosForms)
+ 
 }
 
 const form = document.querySelector('#contato')
 form.addEventListener('change',handleKeyUp)
+
