@@ -22,7 +22,7 @@ function handleKeyUp(event) {
   console.log(event.target.value);
 }
 form.addEventListener('keyup', handleKeyUp);
-COPIAR
+
 VALIDAÇÃO
 O método checkValidity verifica se um input com o atributo required, é válido ou não. A propriedade validationMessage possui a mensagem padrão de erro do browser. É possível modicar com setCustomValidity('')
 
@@ -54,7 +54,8 @@ function handleChange(event) {
   document.body.style.backgroundColor = event.target.value;
 }
 form.addEventListener('change', handleChange);
-COPIAR
+
+
 DIFERENTES INPUTS
 <input type="color">
 <input type="date">
@@ -67,7 +68,9 @@ function handleChange(event) {
   console.log(event.target.value)
 }
 form.addEventListener('change', handleChange);
-COPIAR
+
+
+
 CHECKBOX
 Retorna o valor de value, se estiver checada ou não. checked retorna true ou false.
 
@@ -82,7 +85,9 @@ function handleChange(event) {
     console.log(event.target.value);
 }
 form.addEventListener('change', handleChange);
-COPIAR
+
+
+
 RADIO
 A diferença entre Radio e Checkbox é que radio aceita apenas uma seleção por grupo. Radio é agrupado pelo atributo name.
 
@@ -94,7 +99,9 @@ A diferença entre Radio e Checkbox é que radio aceita apenas uma seleção por
 
   <input type="radio" id="baixo" value="baixo" name="instrumento" />
   <label for="baixo">Baixo</label>
-COPIAR
+
+
+
 const form = document.getElementById('contato');
 function handleChange(event) {
   if(event.target.checked)
@@ -113,7 +120,7 @@ Ao invés de selecionarmos elemento por elemento, podemos utilizar um objeto par
   <label for="mensagem">Mensagem</label>
   <textarea name="mensagem" id="mensagem"></textarea>
 </form>
-COPIAR
+
 const form = document.getElementById('contato');
 const dados = {};
 function handleChange(event) {
