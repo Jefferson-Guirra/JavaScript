@@ -1,4 +1,4 @@
-/*const button ={
+const button ={
   get element(){
     return this.elemento
   },
@@ -21,7 +21,8 @@ const frutas ={
     return this.lista
 
   }
-}*/
+}
+
 class Button{
   constructor(text,backgroud){
     this.text = text
