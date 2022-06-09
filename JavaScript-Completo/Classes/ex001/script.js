@@ -14,9 +14,18 @@
      const elemento = document.querySelector(target)
      elemento.appendChild(this.element())
    }
+   static buttonBlue(text){
+     
+    
+    return new Button(text,'blue',)
+   }
    
  }
 
- const buttonRed = new Button('feito','red')
+ /*const buttonRed = new Button('feito','red')
  buttonRed.appendChildElement('body')
- buttonRed.element()
+ buttonRed.element()*/
+ const buttonBlue = Button.buttonBlue('consegui')
+ buttonBlue.appendChildElement('body')
+ buttonBlue.element()
+ 
