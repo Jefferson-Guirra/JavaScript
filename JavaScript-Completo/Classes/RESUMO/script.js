@@ -47,7 +47,7 @@ function Button(propriedade) {
 }
 Button.prototype.metodo1 = function() {}
 Button.prototype.metodo1 = function() {}
-COPIAR
+
 CONSTRUCTOR
 //O método constructor(args) {} é um método especial de uma classe. Nele você irá definir todas as propriedades do objeto que será criado. Os argumentos passados em new, vão direto para o constructor.
 

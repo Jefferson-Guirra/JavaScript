@@ -1,33 +1,15 @@
-function createElement(text,elemento){
-  function element (){
-    const newElement = document.createElement(elemento)
-    newElement.innerText = text
-    return newElement
+function creatElement(texto,construtor){
+  
+  function element(){
+    const elemento = document.createElement(construtor)
+    elemento.innerText = texto
+    return elemento
   }
   return{
-    text :text,
-    element:element
+    texto,
+    element
   }
 }
-const button =createElement('criado','div')
-console.log(button.element())
 
-/*function test (nome,idade){
-  function andou(){
-    return console.log('andou')
-  }
-
-  function pulou(){
-    return console.log('pulou')
-  }
-  return{
-    nome,
-    idade,
-    andou,
-    pulou
-  }
-
-}
-
-const teste = test('jefferson',24)
-console.log(teste.nome)*/
+const newElement = creatElement('criando uma div','div')
+console.log(newElement)
