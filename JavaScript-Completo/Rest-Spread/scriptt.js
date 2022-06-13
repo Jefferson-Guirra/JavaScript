@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('button')
+/*const buttons = document.querySelectorAll('button')
 const arrrayBtn = [...buttons]
 //console.log(arrrayBtn)
 const numeros=[1,2,5,4,858,36,54,78]
@@ -18,4 +18,20 @@ const frutas = ['Banana', 'Uva', 'Morango']
 const comidas = ['Pizza', 'Batata']
 
 comidas.push(...frutas)
-console.log(comidas)
+console.log(comidas)*/
+
+/*const button = document.querySelectorAll('button')
+
+
+for (let botao of button){
+  botao.style.backgroundColor = 'red'
+}*/
+
+const btnUnico = document.querySelector('button')
+const btnStyles = getComputedStyle(btnUnico)
+for (let estilo in btnStyles){
+  console.log(`${estilo}:${btnStyles[estilo]}`)
+}
+
+
+
