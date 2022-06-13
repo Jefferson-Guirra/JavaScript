@@ -30,4 +30,4 @@ console.log(button.element())
 }
 
 const teste = test('jefferson',24)
-console.log(teste.nome)
+console.log(teste.nome)*/
