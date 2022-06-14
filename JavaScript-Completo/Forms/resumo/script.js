@@ -108,7 +108,8 @@ function handleChange(event) {
     console.log(event.target.value);
 }
 form.addEventListener('change', handleChange);
-COPIAR
+
+
 PEGANDO TODOS OS VALORES
 Ao invés de selecionarmos elemento por elemento, podemos utilizar um objeto para colocarmos todos os dados que o usuário colocar no formulário.
 
