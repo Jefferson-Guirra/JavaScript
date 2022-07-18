@@ -4,4 +4,4 @@
 
 
 ## 🚀 JavaScript
-Repositório criado para armazenar meus testes do curso de JavaScript
+Repositório criado para armazenar meus testes do curso de JavaScript.
